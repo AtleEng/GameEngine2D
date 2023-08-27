@@ -1,0 +1,15 @@
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.csproj.AssemblyReference.cache
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.AssemblyInfoInputs.cache
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.AssemblyInfo.cs
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.csproj.CoreCompileInputs.cache
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\bin\Debug\net6.0\GameEngine2D.exe
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\bin\Debug\net6.0\GameEngine2D.deps.json
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\bin\Debug\net6.0\GameEngine2D.runtimeconfig.json
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\bin\Debug\net6.0\GameEngine2D.dll
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\bin\Debug\net6.0\GameEngine2D.pdb
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.dll
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\refint\GameEngine2D.dll
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.pdb
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\GameEngine2D.genruntimeconfig.cache
+C:\Users\atle.engelbrektsson\Documents\C#\GameEngine2D\GameEngine2D\obj\Debug\net6.0\ref\GameEngine2D.dll
