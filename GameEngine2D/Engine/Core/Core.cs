@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 using System.Numerics;
 using CoreEngine;
+using Engine;
 
 namespace CoreEngine
 {
     public static class Core
     {
+        public static bool shouldClose;
+
         static public List<GameEntity> gameEntities = new();
         static public List<GameSystem> systems = new();
 
@@ -18,8 +21,14 @@ namespace CoreEngine
             systems.Add(new TriggerSystem());
             systems.Add(new PhysicsSystem());
             systems.Add(new RenderSystem());
+
+            while (shouldClose == false)
+            {
+                Time.UpdateDeltaTime();
+                UpdateSystems();
+            }
         }
-        public static void UpdateSystems()
+        static void UpdateSystems()
         {
             // Uppdate all the systems in the right order
             for (int i = 0; i < systems.Count; i++)
