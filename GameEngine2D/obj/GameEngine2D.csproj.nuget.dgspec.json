@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj": {}
+    "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj": {}
   },
   "projects": {
-    "c:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj": {
+    "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
+        "projectUniqueName": "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
         "projectName": "GameEngine2D",
-        "projectPath": "c:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
+        "projectPath": "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
         "packagesPath": "C:\\Users\\atle.engelbrektsson\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\obj\\",
+        "outputPath": "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\atle.engelbrektsson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\atle.engelbrektsson\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

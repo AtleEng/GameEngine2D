@@ -16,14 +16,14 @@ namespace Engine
         {
             System.Console.WriteLine("Spawning entity");
 
-            gameEntity.localTransform = transform;
+            gameEntity.worldTransform = transform;
             gameEntity.parent = parent;
 
             foreach (Component component in gameEntity.components.Values)
             {
                 if (component is PhysicsBody physicsBody)
                 {
-                    physicsBody.position = gameEntity.localTransform.position;
+                    physicsBody.position = gameEntity.worldTransform.position;
                 }
                 component.Start();
             }

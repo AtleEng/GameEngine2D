@@ -18,10 +18,16 @@ namespace CoreEngine
         public static void Innit()
         {
             systems.Add(new ScriptSystem());
+            systems.Add(new ParentSystem());
             systems.Add(new TriggerSystem());
             systems.Add(new PhysicsSystem());
             systems.Add(new RenderSystem());
 
+            // Innit all the systems in the right order
+            for (int i = 0; i < systems.Count; i++)
+            {
+                systems[i].InnitSystem();
+            }
             while (shouldClose == false)
             {
                 Time.UpdateDeltaTime();
