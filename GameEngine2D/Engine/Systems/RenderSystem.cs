@@ -17,7 +17,7 @@ namespace CoreEngine
         float gameScreenWidth;
         float gameScreenHeight;
 
-        public override void InnitSystem()
+        public override void Start()
         {
             Raylib.SetConfigFlags(ConfigFlags.FLAG_WINDOW_RESIZABLE);
             Raylib.SetConfigFlags(ConfigFlags.FLAG_VSYNC_HINT);
@@ -72,7 +72,7 @@ namespace CoreEngine
         void RenderAll()
         {
             //render all entities's spriteRenderers
-            foreach (GameEntity gameEntity in Core.gameEntities)
+            foreach (GameEntity gameEntity in Core.activeEntities)
             {
                 foreach (object component in gameEntity.components.Values)
                 {
@@ -82,7 +82,7 @@ namespace CoreEngine
                     }
                 }
             }
-            Raylib.DrawText($"GameEntitys:{Core.gameEntities.Count}\nFPS:{Raylib.GetFPS()}", 20, 20, 20, Color.RAYWHITE);
+            Raylib.DrawText($"GameEntitys:{Core.activeEntities.Count}\nFPS:{Raylib.GetFPS()}", 20, 20, 20, Color.RAYWHITE);
         }
         void SetValuesOfWindow()
         {

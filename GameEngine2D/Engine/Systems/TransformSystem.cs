@@ -4,15 +4,15 @@ using CoreEngine;
 
 namespace CoreEngine
 {
-    public class ParentSystem : GameSystem
+    public class TransformSystem : GameSystem
     {
-        public override void InnitSystem()
+        public override void Start()
         {
 
         }
         public override void Update()
         {
-            foreach (GameEntity gameEntity in Core.gameEntities)
+            foreach (GameEntity gameEntity in Core.activeEntities)
             {
                 foreach (GameEntity child in gameEntity.children)
                 {

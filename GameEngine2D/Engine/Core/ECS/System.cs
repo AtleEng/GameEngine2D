@@ -6,7 +6,7 @@ namespace CoreEngine
 {
     public abstract class GameSystem
     {
-        public virtual void InnitSystem() { }
+        public virtual void Start() { }
         public virtual void Update() { }
     }
 }

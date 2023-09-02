@@ -4,7 +4,7 @@ using CoreEngine;
 
 namespace CoreEngine
 {
-    public class TriggerSystem : GameSystem
+    public class CollisionSystem : GameSystem
     {
         public override void Start()
         {

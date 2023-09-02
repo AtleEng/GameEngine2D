@@ -128,19 +128,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\atle.engelbrektsson\\.nuget\\packages\\": {}
+    "C:\\Users\\atlee\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
+      "projectUniqueName": "C:\\Users\\atlee\\Documents\\GameDev\\Projects\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
       "projectName": "GameEngine2D",
-      "projectPath": "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
-      "packagesPath": "C:\\Users\\atle.engelbrektsson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atle.engelbrektsson\\Documents\\C#\\GameEngine2D\\GameEngine2D\\obj\\",
+      "projectPath": "C:\\Users\\atlee\\Documents\\GameDev\\Projects\\GameEngine2D\\GameEngine2D\\GameEngine2D.csproj",
+      "packagesPath": "C:\\Users\\atlee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\atlee\\Documents\\GameDev\\Projects\\GameEngine2D\\GameEngine2D\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\atle.engelbrektsson\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\atlee\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -185,7 +185,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.411\\RuntimeIdentifierGraph.json"
       }
     }
   }

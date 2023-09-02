@@ -9,24 +9,35 @@ namespace CoreEngine
     {
         public static bool shouldClose;
 
-        static public List<GameEntity> gameEntities = new();
-        static public List<GameSystem> systems = new();
+        // Define the update order for systems
+        static public List<GameSystem> updateOrder = new List<GameSystem>
+        {
+        //basic systems
+            new ScriptSystem(),
+            new TransformSystem(),
+
+            //physics systems
+            new TriggerSystem(),
+            new CollisionSystem(),
+            new PhysicsSystem(),
+
+            //grahpics systems
+            new RenderSystem()
+            
+            //audio systems
+        };
+        static public List<GameEntity> activeEntities = new();
 
         static public List<GameEntity> entitiesToAdd = new();
         static public List<GameEntity> entitiesToRemove = new();
 
         public static void Innit()
         {
-            systems.Add(new ScriptSystem());
-            systems.Add(new ParentSystem());
-            systems.Add(new TriggerSystem());
-            systems.Add(new PhysicsSystem());
-            systems.Add(new RenderSystem());
 
             // Innit all the systems in the right order
-            for (int i = 0; i < systems.Count; i++)
+            for (int i = 0; i < updateOrder.Count; i++)
             {
-                systems[i].InnitSystem();
+                updateOrder[i].Start();
             }
             while (shouldClose == false)
             {
@@ -36,24 +47,31 @@ namespace CoreEngine
         }
         static void UpdateSystems()
         {
-            // Uppdate all the systems in the right order
-            for (int i = 0; i < systems.Count; i++)
+
+
+            // Batched lists for adding and removing entities
+            List<GameEntity> entitiesToAddBatch = new List<GameEntity>();
+            List<GameEntity> entitiesToRemoveBatch = new List<GameEntity>();
+
+            // Iterate through systems in the specified order
+            foreach (var system in updateOrder)
             {
-                systems[i].Update();
+                system.Update();
             }
 
-            // Add and remove games entities
-            foreach (var entity in entitiesToAdd)
+            // Apply batched entity additions and removals
+            foreach (var entity in entitiesToAddBatch)
             {
-                gameEntities.Add(entity);
+                activeEntities.Add(entity);
             }
-            foreach (var entity in entitiesToRemove)
+            foreach (var entity in entitiesToRemoveBatch)
             {
-                gameEntities.Remove(entity);
+                activeEntities.Remove(entity);
             }
-            //clear the lists
-            entitiesToAdd.Clear();
-            entitiesToRemove.Clear();
+
+            // Clear the batched lists
+            entitiesToAddBatch.Clear();
+            entitiesToRemoveBatch.Clear();
         }
     }
 }

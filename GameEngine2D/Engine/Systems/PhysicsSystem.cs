@@ -6,7 +6,7 @@ namespace CoreEngine
 {
     public class PhysicsSystem : GameSystem
     {
-        public override void InnitSystem()
+        public override void Start()
         {
 
         }
